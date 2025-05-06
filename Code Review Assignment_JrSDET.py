@@ -120,7 +120,7 @@ class LoginPage(BasePage):
         self.driver.find_element(By.ID, "username").send_keys(username)
         self.driver.find_element(By.ID, "password").send_keys(password)
         self.driver.find_element(By.ID, "loginButton").click()
-        # Verify Login worked
+        # Verify Login
 
     def forgotPassword(self): # please use snake_case structure
         self.driver.find_element(By.LINK_TEXT, "Forgot password?").click()
@@ -134,7 +134,11 @@ class HomePage(BasePage):
     # please use snake_case structure
     def navigateToProfile(self):
         self.driver.find_element(By.ID, "profileLink").click()
-
+               
+'''
+This class `TablePage` is currently not used anywhere in the provided codebase.
+Please clarify its purpose or remove it if it's unnecessary to avoid dead code.
+'''
 class TablePage(BasePage):
 
     def __init__(self, driver):
